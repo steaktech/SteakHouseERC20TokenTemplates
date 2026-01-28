@@ -249,6 +249,10 @@ contract TaxToken {
                 }
             }
         }
+    // =============================================================
+    // Receive ETH from router swaps
+    // =============================================================
+    receive() external payable {}
 
         balanceOf[address(this)] = 0;
         swapping = false;
